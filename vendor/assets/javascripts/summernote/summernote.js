@@ -4448,13 +4448,11 @@
         var newRatio = pos.y / pos.x;
         var ratio = $target.data('ratio');
         imageSize = {
-          width: ratio > newRatio ? pos.x : pos.y / ratio,
-          height: ratio > newRatio ? pos.x * ratio : pos.y
+          width: ratio > newRatio ? pos.x : pos.y / ratio
         };
       } else {
         imageSize = {
-          width: pos.x,
-          height: pos.y
+          width: pos.x
         };
       }
 
